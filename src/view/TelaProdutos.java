@@ -1,6 +1,4 @@
 package view;
-
-import view.TelaCadastroProduto;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -66,7 +64,7 @@ public class TelaProdutos extends JPanel {
 
             // Criar e adicionar o painel de cadastro
             JPanel cadastroPanel = TelaProdutos.conteudo();
-            JPanel mainPanel = new JPanel(new BorderLayout());
+            
 
 
             ImageIcon cadImage = new ImageIcon("resources/icons/tela_cadastro_img.png");
@@ -163,7 +161,8 @@ public class TelaProdutos extends JPanel {
 
     public static JPanel conteudo(){
         JPanel painel_principal = new JPanel(new BorderLayout());
-    return painel_principal;
+        JPanel painelPrincipal = painel_principal;
+        return painelPrincipal;
     }
 
 
